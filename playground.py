@@ -384,7 +384,7 @@ if __name__ == '__main__':
     #
     # Pick the function you want to play with <3
     #
-    playground_fn = PLAYGROUND.VISUALIZE_GAT
+    playground_fn = PLAYGROUND.PROFILE_GAT
 
     if playground_fn == PLAYGROUND.PROFILE_SPARSE:
         # shape = (N, F), where N is the number of nodes and F is the number of features
