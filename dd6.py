@@ -10,7 +10,6 @@ for i in range(len(arr)):
     if i == j: 
       arr[i][j] = '-'
 
-print(arr)
 for i in range(3):
     for j in range(10):
         if(j!=9):
@@ -81,7 +80,6 @@ for a in range(30):
                 if(get):
                     point+=1
             
-            print(str(a+1)+","+str(b+1)+","+str(point))
             arr[a][b] = point
             arr[b][a] = point
-            print(arr)
+print(arr)
