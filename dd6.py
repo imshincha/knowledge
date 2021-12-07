@@ -4,11 +4,13 @@ from tqdm import tqdm
 import time
 
 subs=[]
-arr = [[] for _ in range(30)]
+arr = [['NA' for _ in range(30)] for _ in range(30)]
 for i in range(len(arr)):
   for j in range(len(arr[i])):
-    if i <= j: arr[i][j] = '-'
+    if i == j: 
+      arr[i][j] = '-'
 
+print(arr)
 for i in range(3):
     for j in range(10):
         if(j!=9):
@@ -81,4 +83,5 @@ for a in range(30):
             
             print(str(a+1)+","+str(b+1)+","+str(point))
             arr[a][b] = point
+            arr[b][a] = point
             print(arr)
